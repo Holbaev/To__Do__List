@@ -82,3 +82,66 @@ body{
     border-bottom: 2px solid var(--border);
     padding-bottom: 20px;
 }
+
+/* task */
+.task-box{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom:  2px solid var(--border);
+}
+
+.task-text{
+    font-size: 20px;
+    font-weight: 400px;
+    color: var(--color);
+    background: none;
+
+}
+.task-text.active{
+    text-decoration: line-through;
+    color: var(--color-text);
+}
+
+.delete{
+    padding: 10px  15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color);
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.delete:hover{
+    border-right: 2px solid #cc0000;
+    border-bottom: 2px solid #cc0000;
+    color: #cc0000;
+}
+
+.edit{
+    padding: 10px  15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color);
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.edit:hover{
+    border-right: 2px solid var(--edit);
+    border-bottom: 2px solid var(--edit);
+    color: var(--edit);
+}
+
+.task-check{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
