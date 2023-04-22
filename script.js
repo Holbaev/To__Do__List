@@ -50,4 +50,16 @@ function addTask(){
     deleteButton.addEventListener("click" , () =>{
         task.remove();
     });
+
+    //check task
+    task__check.addEventListener("click" , () =>{
+        if(task__check.checked){
+            completedItems.prepend(task);
+            task__text.classList.add("active");
+        }
+        else{
+            currentItems.prepend(task);
+            task__text.classList.remove("active");
+        }
+    })
 };
