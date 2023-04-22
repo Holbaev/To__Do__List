@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+body{
+    font-family: "Roboto" , sans-serif;
+    background-color: white;
+}
+:root{
+    --color:#ffffff;
+    --title-color:#3366ff;
+    --border:#002080;
+    --color-text:#a8a8a8;
+    --background:#000000;
+    --add:#00cc66;
+    --delete: #cc0000;
+    --edit: #ff6600;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list {
+    min-width: 600px;
+    background: var(--background); 
+    padding: 20px;
+    overflow: auto;
+    border-radius: 50px;
+}
+.list__current-item{
+    max-height: 500px;
+    overflow: auto;
+}
+.list__item-completed{
+    padding-bottom: 30px;
+}
+.list__title h1{
+    font-size: 40px;
+    color:var(--title-color);
+    font-weight: 700;
+}
+.list__item-title h1{
+    font-size: 30px;
+    color:var(--title-color);
+    font-weight: 400;
+}
+.list__item-text input{
+    padding: 10px  15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color);
+    border-radius: 10px;
+    background: none;
+}
+.list__item-text button{
+    padding: 10px  15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color);
+    background: var(--add);
+    border-radius: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: all 0.8s;
+}
+.list__item-text button:hover{
+    border-right: 2px solid var(--add);
+    border-bottom: 2px solid var(--add);
+    color: var(--add);
+}
+
+.list__current-item-title h1{
+    font-size: 30px;
+    color:var(--title-color);
+    font-weight: 400;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 20px;
+}
+.list__item-completed-title h1{
+    font-size: 30px;
+    color:var(--title-color);
+    font-weight: 400;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 20px;
+}
+
+/* task */
+.task-box{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom:  2px solid var(--border);
+}
+
+.task-text{
+    font-size: 20px;
+    font-weight: 400px;
+    color: var(--color);
+    background: none;
+
+}
+.task-text.active{
+    text-decoration: line-through;
+    color: var(--color-text);
+}
+
+.delete{
+    padding: 10px  15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color);
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.delete:hover{
+    border-right: 2px solid #cc0000;
+    border-bottom: 2px solid #cc0000;
+    color: #cc0000;
+}
+
+.edit{
+    padding: 10px  15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color);
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.edit:hover{
+    border-right: 2px solid var(--edit);
+    border-bottom: 2px solid var(--edit);
+    color: var(--edit);
+}
+
+.task-check{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
