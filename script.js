@@ -46,4 +46,8 @@ function addTask(){
          }
          edit = !edit;
      });
+       //delete task
+    deleteButton.addEventListener("click" , () =>{
+        task.remove();
+    });
 };
