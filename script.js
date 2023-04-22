@@ -27,4 +27,10 @@ function addTask(){
     // deleteButton 
     const deleteButton = task.children[3];
     deleteButton.classList.add("delete");
+
+      //add task
+      task__text.innerHTML = taskInput.value;
+      taskInput.value = "";
+      currentItems.prepend(task);
+  
 };
