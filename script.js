@@ -32,5 +32,18 @@ function addTask(){
       task__text.innerHTML = taskInput.value;
       taskInput.value = "";
       currentItems.prepend(task);
-  
+     //edit task
+     let edit = false;
+     editButton.addEventListener("click" , () =>{
+         if(edit){
+             editButton.textContent = "Edit";
+             task__text.removeAttribute("contentEditable");
+         }
+         else{
+             editButton.textContent = "save";
+             task__text.setAttribute("contentEditable" , true);
+             task__text.focus();
+         }
+         edit = !edit;
+     });
 };
